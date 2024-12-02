@@ -1,0 +1,527 @@
+<!-- Assignment 03 -->
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+    <!-- TailwindCSS and daisyUI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awasome -->
+    <script src="https://kit.fontawesome.com/7043c081d1.js" crossorigin="anonymous"></script>
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .manrope {
+        font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+
+</head>
+
+<body class="manrope">
+    <!-- header section start -->
+     <header class="max-w-screen-xl mx-auto">
+
+        <!-- navbar content start -->
+        <nav class="py-5 px-3 lg:px-0">
+            <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <div><i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45 mr-2"></i></div>
+                <h3 class="text-3xl font-extrabold">Rinterio</h3>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="flex justify-between items-center space-x-5 cursor-pointer text-base font-normal text-[#737373]">
+                    <li class="font-extrabold text-black">Home</li>
+                    <li>Services</li>
+                    <li>Portfolio</li>
+                    <li>Blogs</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="flex items-center space-x-5">
+                <i class="fa-solid fa-magnifying-glass rounded-full border-solid border-2 border-gray-400 p-2 hidden lg:block"></i>
+                <i class="fa-solid fa-cart-shopping rounded-full border-solid border-2 border-gray-400 p-2 hidden lg:block"></i>
+                <button class="btn hidden lg:block bg-[#ABEF5F] rounded-full text-lg font-bold">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-1"></i></button>
+                <i class="fa-solid fa-bars rounded-full border-solid border-2 border-gray-400 p-2 lg:hidden"></i>
+            </div>
+        </div>
+        </nav>
+        <!-- navbar content end -->
+
+        <!-- banner section start -->
+         <div class="flex flex-col items-center mt-12 space-y-6 px-3">
+            <img src="./assets/banner.png" alt="" class="">
+            <h1 class="text-2xl lg:text-6xl text-center font-extrabold text-[#212121] w-4/5">A barn house of this design has a striking appearance</h1>
+            <p class="text-sm font-medium text-[#494949] text-center lg:w-4/5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="btn bg-[#ABEF5F80] rounded-full text-lg font-bold px-20 lg:px-6 border-solid border-1 border-[#ABEF5F]">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] text-white rounded-full p-1 ml-1"></i></button>
+         </div>
+        <!-- banner section end -->
+
+     </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+     <main class="bg-gray-100">
+        <!-- about section start -->
+         <section class="mt-32 relative">
+            <img src="./assets/Vector.png" alt="" class="absolute top-12 left-16 hidden lg:block">
+            <div class="grid grid-cols-1 lg:grid-cols-2 max-w-screen-xl mx-auto py-10 px-3 lg:px-0 lg:py-24 lg:space-x-6 space-y-5 lg:space-y-0">
+                <!-- text content -->
+                <div class="flex flex-col items-center lg:items-start space-y-5">
+                    <p class="text-base font-bold bg-white rounded-full px-4 py-1"><i class="fa-solid fa-arrow-right"></i>About Us</p>
+                    <h3 class="text-2xl lg:text-4xl font-bold text-center">We design thoughtful,<br> liveable spaces</h3>
+                    <p class="text-sm lg:text-base font-medium text-[#494949] text-center">At Rinterio, we pride ourselves on exceptional customer service, delivering high-quality construction solutions tailored to your unique needs and vision.</p>
+
+                    <div class="flex items-center space-x-4 bg-white p-5 rounded-xl">
+                        <div><img src="./assets/commercial.png" alt=""></div>
+                        <div>
+                            <h5 class="text-xl font-extrabold">Commercial</h5>
+                            <p class="text-base font-medium text-[#737373] w-4/5">Delivering superior commercial construction solutions for business success.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 bg-white p-5 rounded-xl">
+                        <div><img src="./assets/residential.png" alt=""></div>
+                        <div>
+                            <h5 class="text-xl font-extrabold">Residential</h5>
+                            <p class="text-base font-medium text-[#737373] w-4/5">Creating dream homes with exceptional residential construction expertise.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image content -->
+                 <div>
+                    <img src="./assets/Rectangle.png" alt="">
+                 </div>
+            </div>
+
+         </section>
+        <!-- about section end -->
+
+        <!-- our works section start -->
+         <section class="">
+            <div class="max-w-screen-xl mx-auto flex flex-col items-center space-y-7 lg:py-24 px-3 lg:px-0">
+                <!-- text content -->
+                 <div class="flex flex-col items-center space-y-4">
+                    <p class="text-base font-bold bg-white rounded-full px-4 py-1"><i class="fa-solid fa-arrow-right"></i>How we works</p>
+                    <h3 class="text-2xl lg:text-4xl font-bold text-center">Our Work Process</h3>
+                    <p class="text-sm lg:text-base font-medium text-[#494949] lg:w-4/5 text-center">Our work process involves detailed planning, precise design, expert construction, thorough quality checks, and timely project delivery for optimal results.</p>
+                 </div>
+
+                 <!-- cards content -->
+                  <div class="grid grid-cols-1 lg:grid-cols-4 lg:space-x-5 space-y-5 lg:space-y-0">
+
+                    <!-- card one -->
+                    <div class="flex flex-col items-start bg-[#E7C1D3] rounded-xl space-y-3 p-5">
+                        <img src="./assets/concept.png" alt="">
+                        <h5 class="text-xl font-extrabold">Concept</h5>
+                        <p class="text-base font-medium text-[#494949] ">Expert construction solutions transforming your vision into reality.</p>
+                    </div>
+
+                    <!-- card two -->
+                    <div class="flex flex-col items-start bg-[#EFDA6E] rounded-xl space-y-3 p-5">
+                        <img src="./assets/flow-chart.png" alt="">
+                        <h5 class="text-xl font-extrabold">Design Process</h5>
+                        <p class="text-base font-medium text-[#494949] ">Conceptualize, design, plan, build, and deliver exceptional construction results.</p>
+                    </div>
+
+                    <!-- card three -->
+                    <div class="flex flex-col items-start bg-[#A4DAC3] rounded-xl space-y-3 p-5">
+                        <img src="./assets/vision.png" alt="">
+                        <h5 class="text-xl font-extrabold">Supervision</h5>
+                        <p class="text-base font-medium text-[#494949] ">Overseeing projects to ensure quality, safety, and timely completion.</p>
+                    </div>
+
+                    <!-- card four -->
+                    <div class="flex flex-col items-start bg-[#77AAEA] rounded-xl space-y-3 p-5">
+                        <img src="./assets/budget-planning.png" alt="">
+                        <h5 class="text-xl font-extrabold">Budget Planning</h5>
+                        <p class="text-base font-medium text-[#494949] ">Strategic budget planning to ensure cost-effective and efficient construction.</p>
+                    </div>
+                  </div>
+            </div>
+         </section>
+        <!-- our works section end -->
+
+        <!-- latest portfolio section start -->
+         <section class="bg-white">
+            <div class="max-w-screen-xl mx-auto py-28 px-3 lg:px-0">
+                
+                <!-- text content -->
+                <div class="flex flex-col items-center space-y-4 mb-5">
+                    <p class="text-base font-bold bg-[#ABEF5F33] rounded-full px-4 py-1"><i class="fa-solid fa-arrow-right"></i>Explore our Latest works</p>
+                    <h3 class="text-2xl lg:text-4xl font-bold text-center">Our Latest Portfolio</h3>
+                    <p class="text-sm lg:text-base font-medium text-[#494949] lg:w-3/5 text-center">Explore our latest portfolio featuring innovative residential and commercial projects, showcasing cutting-edge design, quality craftsmanship, and successful client outcomes.</p>
+                 </div>
+
+                <!-- collage -->
+                 <div class="grid grid-cols-1 lg:grid-cols-5 items-center lg:space-x-5 space-y-5">
+
+                    <!-- collage-one -->
+                    <div class="flex flex-col lg:flex-row items-center lg:col-span-3 lg:space-x-3 space-y-3 border-solid border-2 border-[#E9E9E9] rounded-xl p-4">
+                        <img src="./assets/img1.png" alt="" class="mx-auto">
+                        <div>
+                            <h5 class="text-2xl font-extrabold">Commercial</h5>
+                            <p class="text-base font-medium text-[#737373] lg:w-4/5">Delivering superior commercial construction solutions for business success.</p>
+                            <a href="#" class="text-base font-bold">View Details <i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45 mr-2"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- collage-two -->
+                    <div class="border-solid border-2 border-[#E9E9E9] rounded-xl p-4 col-span-1 md:col-span-2">
+                        <img src="./assets/img2.png" alt=""  class="lg:w-[326px] lg:h-[179.3px] mx-auto">
+                    </div>
+
+                    <!-- collage-three -->
+                    <div class="border-solid border-2 border-[#E9E9E9] rounded-xl p-4">
+                        <img src="./assets/img3.png" alt="" class="mx-auto w-[350px] lg:w-full">
+                    </div>
+
+                    <!-- collage-four -->
+                    <div class="flex flex-col lg:flex-row items-center lg:col-span-3 lg:space-x-3  space-y-3 border-solid border-2 border-[#E9E9E9] rounded-xl p-4">
+                        <img src="./assets/img4.png" alt="" class="mx-auto">
+                        <div>
+                            <h5 class="text-2xl font-extrabold">Residential</h5>
+                            <p class="text-base font-medium text-[#737373] lg:w-4/5">Creating dream homes with exceptional residential construction expertise.</p>
+                            <a href="#" class="text-base font-bold">View Details <i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45 mr-2"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- collage-five -->
+                    <div class="border-solid border-2 border-[#E9E9E9] rounded-xl p-4"><img src="./assets/img5.png" alt="" class="mx-auto w-[350px] lg:w-full"></div>
+                 </div>
+
+                 <!-- collage-six -->
+                 <div class="md:hidden border-solid border-2 border-[#E9E9E9] rounded-xl p-4 mt-5"><img src="./assets/img3.png" alt="" class="mx-auto w-[350px] lg:w-full"></div>
+                </div>
+            </div>
+         </section>
+        <!-- latest portfolio section end -->
+
+        <!-- team section start -->
+         <section>
+            <div class="max-w-screen-xl mx-auto py-10 lg:py-28 px-20 lg:px-0">
+
+                <!-- text content -->
+                <div class="flex flex-col items-center space-y-4">
+                    <p class="text-base font-bold bg-red-200 rounded-full px-4 py-1"><i class="fa-solid fa-arrow-right"></i>Our Team</p>
+                    <h3 class="text-2xl lg:text-4xl font-bold text-center">Our Creative Expertise</h3>
+                    
+                 </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 mt-5">
+                    <div class="flex flex-col items-center border-solid border-2 border-gray-600 p-5 rounded-xl shadow-xl bg-white hover:bg-lime-200 transition-colors">
+                        <img src="./assets/p1.jpg" alt="" class="rounded-xl">
+                        <h3 class="text-xl font-bold my-2 text-center">Shafriki islam</h3>
+                        <p class="font-semibold text-red-500">Director</p>
+                    </div>
+
+                    <div class="flex flex-col items-center border-solid border-2 border-gray-600 p-5 rounded-xl shadow-xl bg-white hover:bg-lime-200 transition-colors">
+                        <img src="./assets/p2.jpg" alt="" class="rounded-xl">
+                        <h3 class="text-xl font-bold my-2 text-center">Shahriar Efti</h3>
+                        <p class="font-semibold text-red-500">Director</p>
+                    </div>
+
+                    <div class="flex flex-col items-center border-solid border-2 border-gray-600 p-5 rounded-xl shadow-xl bg-white hover:bg-lime-200 transition-colors">
+                        <img src="./assets/p3.png" alt="" class="rounded-xl lg:h-[266px]">
+                        <h3 class="text-lg font-bold my-2 text-center">Mohammad Nurullah</h3>
+                        <p class="font-semibold text-red-500">Director</p>
+                    </div>
+
+                    <div class="flex flex-col items-center border-solid border-2 border-gray-600 p-5 rounded-xl shadow-xl bg-white hover:bg-lime-200 transition-colors">
+                        <img src="./assets/p4.png" alt="" class="rounded-xl lg:h-[266px]">
+                        <h3 class="text-xl font-bold my-2 text-center">Soykot Azha</h3>
+                        <p class="font-semibold text-red-500">Director</p>
+                    </div>
+
+                    <div class="flex flex-col items-center border-solid border-2 border-gray-600 p-5 rounded-xl shadow-xl bg-white hover:bg-lime-200 transition-colors">
+                        <img src="./assets/p5.png" alt="" class="rounded-xl">
+                        <h3 class="text-xl font-bold my-2 text-center">Mijanur Rahman</h3>
+                        <p class="font-semibold text-red-500">Director</p>
+                    </div>
+                </div>
+
+            </div>
+         </section>
+         <!-- team section end -->
+          
+         <!-- popular services section start -->
+          <section class="bg-white">
+            <div class="max-w-screen-xl mx-auto py-10 lg:py-28 px-3 lg:px-0 grid grid-cols-1 lg:grid-cols-2 items-center">
+                
+                <!-- text content -->
+                <div class="flex flex-col items-center lg:items-start space-y-4">
+                    <p class="text-base font-bold bg-lime-400 rounded-full px-4 py-1"><i class="fa-solid fa-arrow-right"></i>Popular Services</p>
+                    <h3 class="text-2xl lg:text-5xl font-extrabold text-center lg:text-start">We Provided Best <br> Features To <br> Build Dream</h3>
+                    
+                 </div>
+
+                 <!-- services list -->
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center mt-5">
+
+                    <!-- service one -->
+                    <div class="flex items-center space-x-4 border-solid border-2 border-lime-500 p-5 rounded-xl shadow-xl">
+                        <div><img src="./icons/plan.png" alt="" class="w-16 bg-red-200 p-1 rounded-md"></div>
+                        <div>
+                            <h5 class="text-xl font-extrabold">Floor Plan Design</h5>
+                            <p class="text-sm font-medium text-[#737373] ">Expert floor plan designs, tailored for your unique space and needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- service two -->
+                    <div class="flex items-center space-x-4 border-solid border-2 border-lime-500 p-5 rounded-xl shadow-xl">
+                        <div><img src="./icons/blueprint.png" alt="" class="w-16 bg-red-200 p-1 rounded-md"></div>
+                        <div>
+                            <h5 class="text-xl font-extrabold">Construction Work</h5>
+                            <p class="text-sm font-medium text-[#737373]">Reliable construction services, building quality structures with precision.</p>
+                        </div>
+                    </div>
+
+                    <!-- service three -->
+                    <div class="flex items-center space-x-4 border-solid border-2 border-lime-500 p-5 rounded-xl shadow-xl">
+                        <div><img src="./icons/interior-design.png" alt="" class="w-16 bg-red-200 p-1 rounded-md"></div>
+                        <div>
+                            <h5 class="text-xl font-extrabold">Interior Designing</h5>
+                            <p class="text-sm font-medium text-[#737373]">Creative interior design solutions that transform spaces into stylish, functional environments.</p>
+                        </div>
+                    </div>
+
+                    <!-- service four -->
+                    <div class="flex items-center space-x-4 border-solid border-2 border-lime-500 p-5 rounded-xl shadow-xl">
+                        <div><img src="./icons/desk.png" alt="" class="w-16 bg-red-200 p-1 rounded-md"></div>
+                        <div>
+                            <h5 class="text-xl font-extrabold">Furniture Work</h5>
+                            <p class="text-sm font-medium text-[#737373]">Custom furniture craftsmanship, enhancing spaces with quality pieces.</p>
+                        </div>
+                    </div>
+
+                    <!-- service five -->
+                    <div class="flex items-center space-x-4 border-solid border-2 border-lime-500 p-5 rounded-xl shadow-xl">
+                        <div><img src="./icons/building.png" alt="" class="w-16 bg-red-200 p-1 rounded-md"></div>
+                        <div>
+                            <h5 class="text-xl font-extrabold">Architecture</h5>
+                            <p class="text-sm font-medium text-[#737373]">Innovative architectural designs, creating visionary spaces with precision.</p>
+                        </div>
+                    </div>
+
+                    <!-- service six -->
+                    <div class="flex items-center space-x-4 border-solid border-2 border-lime-500 p-5 rounded-xl shadow-xl">
+                        <div><img src="./icons/support.png" alt="" class="w-16 bg-red-200 p-1 rounded-md"></div>
+                        <div>
+                            <h5 class="text-xl font-extrabold">24X7 Support</h5>
+                            <p class="text-sm font-medium text-[#737373]">Round-the-clock support, ensuring seamless service anytime, anywhere.</p>
+                        </div>
+                    </div>
+
+                  </div>
+
+            </div>
+          </section>
+         <!-- popular services section end -->
+
+         <!-- customer review section start -->
+          <section>
+            <div class="max-w-screen-xl mx-auto py-10 lg:py-28 px-3 lg:px-0">
+
+                <!-- text content -->
+                <div class="flex flex-col items-center space-y-4">
+                    <p class="text-base font-bold bg-lime-500 rounded-full px-4 py-1"><i class="fa-solid fa-arrow-right"></i>Testimonial</p>
+                    <h3 class="text-2xl lg:text-4xl font-bold text-center">See What Our Clint<span class="text-red-600">'</span>s Says</h3>
+                 </div>
+
+                 <!-- clint's content -->
+                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-20">
+
+                    <!-- clint one -->
+                    <div class="bg-white p-5 rounded-xl shadow-xl">
+                        <div class="flex items-center gap-5 mb-7 bg-lime-500 p-3 rounded-xl">
+                            <!-- clint img -->
+                            <img src="./clints/c1.png" alt="" class="w-16 rounded-xl">
+                            <div>
+                                <!-- clint info -->
+                                <h3 class="text-xl font-bold text-white">Ahad</h3>
+                                <p class="font-semibold text-white">CEO Founder</p>
+                            </div>
+                        </div>
+                        <div class="mb-7">
+                            <!-- comment -->
+                            <p class="font-medium text-base text-gray-700">Professional team, delivered on time, exceeded expectations—our dream home became a reality. Highly recommended!</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <!-- star -->
+                            <div class="flex items-center mt-3">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7"> 
+                            </div>
+                            <!-- review -->
+                            <p class="text-base font-extrabold mt-4">Best Quality</p>
+                        </div>
+                    </div>
+
+
+                    <!-- clint two -->
+                    <div class="bg-red-500 p-5 rounded-xl shadow-xl lg:relative lg:bottom-8">
+                        <div class="flex items-center gap-5 mb-7 bg-white p-3 rounded-xl">
+                            <!-- clint img -->
+                            <img src="./clints/c4.png" alt="" class="w-16 rounded-xl">
+                            <div>
+                                <!-- clint info -->
+                                <h3 class="text-xl font-bold text-black">Jahid</h3>
+                                <p class="font-semibold text-black">Fluter Developer</p>
+                            </div>
+                        </div>
+                        <div class="mb-7">
+                            <!-- comment -->
+                            <p class="font-medium text-base text-white">Our office renovation was seamless. The team was skilled, timely, and committed to perfection in every detail.</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <!-- star -->
+                            <div class="flex items-center mt-3">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7"> 
+                            </div>
+                            <!-- review -->
+                            <p class="text-base font-extrabold mt-4 text-white">Awasome</p>
+                        </div>
+                    </div>
+
+
+                    <!-- clint three -->
+                    <div class="bg-red-500 p-5 rounded-xl shadow-xl lg:relative lg:bottom-8">
+                        <div class="flex items-center gap-5 mb-7 bg-white p-3 rounded-xl">
+                            <!-- clint img -->
+                            <img src="./clints/c3.png" alt="" class="w-16 rounded-xl">
+                            <div>
+                                <!-- clint info -->
+                                <h3 class="text-xl font-bold text-black">Jahin</h3>
+                                <p class="font-semibold text-black">BCS Cader</p>
+                            </div>
+                        </div>
+                        <div class="mb-7">
+                            <!-- comment -->
+                            <p class="font-medium text-base text-white">Attention to detail was exceptional. The construction was flawless, and the crew was extremely reliable and friendly.</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <!-- star -->
+                            <div class="flex items-center mt-3">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7"> 
+                            </div>
+                            <!-- review -->
+                            <p class="text-base font-extrabold mt-4 text-white">Greatful</p>
+                        </div>
+                    </div>
+
+
+                    <!-- clint four -->
+                    <div class="bg-white p-5 rounded-xl shadow-xl">
+                        <div class="flex items-center gap-5 mb-7 bg-lime-500 p-3 rounded-xl">
+                            <!-- clint img -->
+                            <img src="./clints/c2.png" alt="" class="w-16 rounded-xl">
+                            <div>
+                                <!-- clint info -->
+                                <h3 class="text-xl font-bold text-white">Rakib</h3>
+                                <p class="font-semibold text-white">Police Officer</p>
+                            </div>
+                        </div>
+                        <div class="mb-7">
+                            <!-- comment -->
+                            <p class="font-medium text-base text-gray-700">Impressive quality, efficient service, and great communication. The project was stress-free and well-managed throughout.</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <!-- star -->
+                            <div class="flex items-center mt-3">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7">
+                                <img src="./icons/star.png" alt="" class="w-7"> 
+                            </div>
+                            <!-- review -->
+                            <p class="text-base font-extrabold mt-4">Use Fully</p>
+                        </div>
+                    </div>
+
+
+
+                 </div>
+
+
+            </div>
+          </section>
+         <!-- customer review section start -->
+
+        <!-- discuss section start -->
+         <section class="bg-cover bg-no-repeat" style="background-image: url('./assets/bg.jpg');">
+            <div class="max-w-screen-xl mx-auto py-10 lg:py-28 px-3 lg:px-0">
+
+                 <!-- text content -->
+                 <div class="flex flex-col items-center space-y-4 mb-5">
+                    <p class="text-base font-bold bg-[#ABEF5F33] rounded-full px-4 py-1"><i class="fa-solid fa-arrow-right"></i>Let’s Connect</p>
+                    <h3 class="text-2xl lg:text-4xl font-bold text-center">Let’s Discuss Next Project</h3>
+                    <p class="text-sm lg:text-base font-medium text-[#494949] lg:w-3/5 text-center">Please reach out via email or message to discuss your construction needs. We’re committed to delivering exceptional quality and service.</p>
+                 </div>
+
+                 <!-- message box -->
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <input type="text" placeholder="First Name*" class="p-4 rounded-full">
+                    <input type="text" placeholder="Last Name*" class="p-4 rounded-full">
+                    <input type="number" placeholder="Phone Number*" class="p-4 rounded-full">
+                    <input type="email" placeholder="Email Number*" class="p-4 rounded-full">
+                    <input type="text" placeholder="Write your message here" class="lg:col-span-2 py-28 rounded-2xl">
+                    <button class="lg:col-span-2 btn bg-[#ABEF5F] rounded-full text-xl font-extrabold">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-1"></i></button>
+                  </div>
+                
+            </div>
+         </section>
+        <!-- discuss section end -->
+
+     </main>
+    <!-- main section end -->
+
+    <!-- footer section start -->
+     <footer>
+        <section class="bg-black text-white">
+            <div class="flex flex-col items-center max-w-screen-xl mx-auto space-y-5 py-10 px-3 lg:px-0">
+                <div class="flex items-center">
+                    <div><i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-2 -rotate-45 mr-2"></i></div>
+                    <h3 class="text-3xl font-extrabold">Rinterio</h3>
+                </div>
+                <p class="text-[#737373] text-center lg:w-3/5 text-sm lg:text-base">At Rinterio, we pride ourselves on exceptional customer service, delivering high-quality construction solutions tailored to your unique needs and vision.</p>
+                <div class="list-none flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 cursor-pointer lg:space-x-5">
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Portfolio</li>
+                    <li>Blogs</li>
+                    <li>Contact Us</li>
+                </div>
+                <button class="btn text-base font-extrabold bg-[#ABEF5F] rounded-full px-20 lg:px-5">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full p-1"></i></button>
+            </div>
+        </section>
+
+     </footer>
+    <!-- footer section end -->
+
+</body>
+</html>
+
